@@ -1,0 +1,106 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3FullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "s3:*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::omni-inspector-*",
+        "arn:aws:s3:::omni-inspector-*/*"
+      ]
+    },
+    {
+      "Sid": "DynamoDBFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:*"
+      ],
+      "Resource": [
+        "arn:aws:dynamodb:*:*:table/omni-inspector-*"
+      ]
+    },
+    {
+      "Sid": "BedrockAccess",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SageMakerAccess",
+      "Effect": "Allow",
+      "Action": [
+        "sagemaker:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "KinesisVideoAccess",
+      "Effect": "Allow",
+      "Action": [
+        "kinesisvideo:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CognitoAccess",
+      "Effect": "Allow",
+      "Action": [
+        "cognito-idp:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "LambdaAccess",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:*"
+      ],
+      "Resource": "arn:aws:lambda:*:*:function:omni-inspector-*"
+    },
+    {
+      "Sid": "IAMPassRole",
+      "Effect": "Allow",
+      "Action": [
+        "iam:PassRole"
+      ],
+      "Resource": "arn:aws:iam::*:role/omni-inspector-*"
+    },
+    {
+      "Sid": "CloudWatchLogs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "IoTCoreAccess",
+      "Effect": "Allow",
+      "Action": [
+        "iot:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "LocationServiceAccess",
+      "Effect": "Allow",
+      "Action": [
+        "geo:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudFormationAccess",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

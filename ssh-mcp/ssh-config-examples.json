@@ -1,0 +1,151 @@
+{
+  "ejemplos_configuracion_ssh": {
+    "ejemplo_1_password": {
+      "descripcion": "Autenticacion con contraseña basica",
+      "config": {
+        "mcpServers": {
+          "ssh": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=192.168.1.100",
+              "--port=22",
+              "--user=admin",
+              "--password=mipassword123"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          }
+        }
+      }
+    },
+    "ejemplo_2_ssh_key": {
+      "descripcion": "Autenticacion con clave SSH (mas seguro)",
+      "config": {
+        "mcpServers": {
+          "ssh": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=example.com",
+              "--port=22",
+              "--user=root",
+              "--key=C:\\Users\\TitoGomez\\.ssh\\id_rsa"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          }
+        }
+      }
+    },
+    "ejemplo_3_con_sudo": {
+      "descripcion": "Con soporte para comandos sudo",
+      "config": {
+        "mcpServers": {
+          "ssh": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=192.168.1.100",
+              "--user=ubuntu",
+              "--password=userpass",
+              "--sudoPassword=sudopass"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          }
+        }
+      }
+    },
+    "ejemplo_4_timeout_personalizado": {
+      "descripcion": "Con timeout de 2 minutos y sin limite de caracteres",
+      "config": {
+        "mcpServers": {
+          "ssh": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=192.168.1.100",
+              "--user=admin",
+              "--password=pass123",
+              "--timeout=120000",
+              "--maxChars=none"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          }
+        }
+      }
+    },
+    "ejemplo_5_puerto_personalizado": {
+      "descripcion": "Servidor SSH en puerto no estandar",
+      "config": {
+        "mcpServers": {
+          "ssh": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=example.com",
+              "--port=2222",
+              "--user=deploy",
+              "--key=C:\\Users\\TitoGomez\\.ssh\\deploy_key"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          }
+        }
+      }
+    },
+    "ejemplo_6_multiples_servidores": {
+      "descripcion": "Configuracion con multiples servidores SSH",
+      "config": {
+        "mcpServers": {
+          "ssh-produccion": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=prod.example.com",
+              "--user=admin",
+              "--key=C:\\Users\\TitoGomez\\.ssh\\prod_key"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          },
+          "ssh-desarrollo": {
+            "command": "npx.cmd",
+            "args": [
+              "ssh-mcp",
+              "-y",
+              "--",
+              "--host=dev.example.com",
+              "--user=developer",
+              "--password=devpass123"
+            ],
+            "disabled": false,
+            "autoApprove": []
+          }
+        }
+      }
+    }
+  },
+  "notas_importantes": [
+    "Reemplaza los valores de ejemplo con tus datos reales",
+    "Para usar clave SSH, asegurate de que la ruta use barras invertidas dobles (\\\\)",
+    "El puerto por defecto es 22, solo especificalo si es diferente",
+    "Para mayor seguridad, usa autenticacion por clave SSH en lugar de contraseña",
+    "Puedes tener multiples servidores SSH configurados simultaneamente",
+    "Despues de editar la configuracion, reinicia Kiro o reconecta desde el panel MCP"
+  ]
+}

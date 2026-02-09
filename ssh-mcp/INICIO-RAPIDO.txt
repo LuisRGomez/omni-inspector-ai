@@ -1,0 +1,77 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                    SSH MCP - INICIO RAPIDO                           ║
+║                  Instalacion Completada con Exito                    ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+✅ ESTADO: TODO INSTALADO Y FUNCIONANDO
+
+📦 COMPONENTES INSTALADOS:
+   • Node.js v24.13.0
+   • npm 11.6.2 / npx
+   • uv 0.10.0 (Python package manager)
+   • ssh-mcp (MCP SSH Server)
+   • Configuracion base en .kiro/settings/mcp.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CONFIGURACION RAPIDA (3 OPCIONES):
+
+OPCION 1 - SCRIPT INTERACTIVO (MAS FACIL):
+   cd ssh-mcp
+   powershell -ExecutionPolicy Bypass -File quick-setup.ps1
+
+OPCION 2 - EDICION MANUAL:
+   1. Abre: .kiro\settings\mcp.json
+   2. Reemplaza: YOUR_HOST, YOUR_USER, YOUR_PASSWORD
+   3. Guarda el archivo
+   4. Reinicia Kiro o reconecta el servidor MCP
+
+OPCION 3 - VER EJEMPLOS:
+   Abre: ssh-mcp\ssh-config-examples.json
+   Copia el ejemplo que necesites a .kiro\settings\mcp.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTACION DISPONIBLE:
+
+   README-SSH-MCP.md ............... Guia completa y detallada
+   SSH-MCP-SETUP.md ................ Instrucciones de configuracion
+   ssh-config-examples.json ........ 6 ejemplos de configuracion
+   COMANDOS-UTILES.md .............. Lista de comandos que puedes usar
+   test-ssh-connection.ps1 ......... Script de verificacion
+
+   Todos los archivos estan en la carpeta: ssh-mcp\
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 VERIFICAR INSTALACION:
+   cd ssh-mcp
+   powershell -ExecutionPolicy Bypass -File test-ssh-connection.ps1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 EJEMPLOS DE USO (despues de configurar):
+
+   "Lista los archivos en /var/www"
+   "Muestra el uso de disco del servidor"
+   "Verifica si nginx esta corriendo"
+   "Reinicia el servicio apache2"
+   "Instala python3-pip en el servidor"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  IMPORTANTE:
+   • Tu contraseña estara en texto plano en mcp.json
+   • Considera usar clave SSH para mayor seguridad
+   • No compartas el archivo mcp.json en repositorios publicos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 PROXIMO PASO:
+   cd ssh-mcp
+   Ejecuta: powershell -ExecutionPolicy Bypass -File quick-setup.ps1
+   O edita manualmente: ..\\.kiro\settings\mcp.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+¿Necesitas ayuda? Lee README-SSH-MCP.md para mas informacion.

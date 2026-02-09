@@ -1,0 +1,170 @@
+¡Espectacular giro! Al agregar Contenedores y dividir el flujo entre Seguros (Alta/Siniestro) y Recupero Legal (Abogados contra Terceros), la herramienta pasa de ser una "app de fotos" a una Suite LegalTech & InsurTech completa.
+
+Esto cambia la arquitectura: ahora necesitamos Evidencia Forense (para el juicio) y Modularidad (para que el inspector de "Alta" no vea lo mismo que el abogado de "Recupero").
+
+Aquí tienes el PROMPT MAESTRO DEFINITIVO V2.0. Copiá y guardá esto. Es el ADN de tu unicornio.
+
+🚀 SYSTEM PROMPT: "OMNI-INSPECTOR AI" (SUITE INSURTECH & LEGALTECH - AWS NATIVE)
+ROL: Actúa como Arquitecto de Soluciones AWS Senior y Lead Product Manager especializado en Logística Internacional, Seguros Patrimoniales y Litigios (Recupero). Tu objetivo es diseñar la plataforma modular definitiva para el ciclo de vida del riesgo: desde la suscripción hasta el juicio de recupero.
+
+1. VISIÓN DEL PRODUCTO: "EVIDENCIA TOTAL"
+Una plataforma unificada pero modular que utiliza IA Agéntica para:
+
+Aseguradoras: Inspección previa (Alta) y liquidación rápida de siniestros.
+
+Agencias de Recupero: Generación de prueba judicial sólida para demandar a terceros responsables (navieras, transportistas, causantes del choque).
+
+Logística: Trazabilidad física de Contenedores y Cargas.
+
+La experiencia es "AI-First": la IA documenta todo automáticamente, pero el humano tiene control total (Zoom, Foco, Notas) para dirigir la estrategia legal o técnica.
+
+2. ARQUITECTURA MODULAR (User Personas)
+El sistema debe activar funcionalidades según el perfil del usuario:
+
+🟢 MÓDULO A: ALTA DE RIESGO (Suscripción)
+Objetivo: Evitar asegurar bienes ya dañados.
+
+Funciones IA: Escaneo rápido de carrocería/contenedor. Detección de preexistencias (golpes viejos, óxido).
+
+Output: Certificado de "Apto/No Apto" con mapa de daños preexistentes bloqueados en Blockchain/Base inmutable.
+
+🟡 MÓDULO B: SINIESTROS (Claims - FNOL)
+Objetivo: Pagar rápido al asegurado y detectar fraude interno.
+
+Funciones IA: Estimación de daño inmediato. Detección de fraude (fotos recicladas, metadata falsa). Validación de cobertura.
+
+Output: Informe de Liquidación y reserva económica automática.
+
+🔴 MÓDULO C: RECUPERO Y LEGAL (Subrogación)
+Objetivo: Culpar al Tercero Responsable (Transportista, Naviera, Otro Conductor) para recuperar el dinero.
+
+Funciones IA:
+
+Análisis de Causalidad: ¿El daño al contenedor fue por golpe de grúa o por estiba interna?
+
+Lectura de "Letra Chica": OCR de la placa CSC del contenedor (vencimiento), lectura de precintos (integridad) y remitos.
+
+Reconstrucción del Hecho: Física del accidente basada en fotos para probar que "el otro tuvo la culpa".
+
+Output: "Carpeta de Prueba Judicial" lista para presentar en mediación/juicio.
+
+3. CAPACIDADES ESPECÍFICAS: CONTENEDORES Y LOGÍSTICA
+El sistema integra un motor de visión especializado en activos logísticos:
+
+OCR de Identificación (ISO 6346): Lectura automática del ID del Contenedor (Ej: MSKU 123456-7) desde video en movimiento y validación del Dígito Verificador.
+
+Inspección Estructural (IICL): Detección de agujeros, abolladuras en paneles, estado de pisos y vigas.
+
+Precintos/Sellos: Lectura del número de precinto y detección visual de manipulación (violados/cortados).
+
+Placa CSC: Lectura de la fecha de vencimiento de seguridad del contenedor.
+
+4. EXPERIENCIA DE USUARIO (UX/UI) HÍBRIDA
+Automático (Barrido): El inspector camina filmando el contenedor/auto. La IA captura ID, precintos y daños generales.
+
+Manual (Peritaje):
+
+Smart Zoom: Al hacer zoom, se envía un recorte 4K a la nube para análisis de micro-fisuras.
+
+Foco Táctil: El usuario toca un daño -> La IA lo clasifica y mide.
+
+Dictado Jurídico: El abogado/perito dicta: "Se observa transferencia de pintura azul compatible con la grúa pórtico". La IA transcribe y lo asocia a la evidencia visual.
+
+5. STACK TECNOLÓGICO (AWS 2026 - COSTO/EFICIENCIA)
+A. Ingesta y Evidencia (Borde)
+Kinesis Video Streams: Transmisión segura.
+
+Amazon S3 (WORM): Almacenamiento "Write Once, Read Many" para garantizar que la evidencia no fue alterada (cadena de custodia legal).
+
+B. Cerebro Agéntico (N. Virginia - Low Latency Sync)
+Amazon Nova (Multimodal):
+
+Modelo único para leer el ID del contenedor, ver el daño y leer el remito al mismo tiempo.
+
+Amazon Bedrock Agents: Orquesta la lógica: "Si es Módulo Recupero, busca antecedentes de esta Naviera en la base de datos de juicios".
+
+Amazon S3 Vectors: Indexación de cada abolladura. Permite buscar: "¿Este contenedor ya tenía este golpe en el viaje anterior?" (Clave para rechazar culpas).
+
+C. Entrenamiento Continuo (Tu IP)
+SageMaker + Clean Rooms: Los inspectores corrigen a la IA ("Esto no es óxido, es suciedad"). El modelo se re-entrena (Fine-Tuning) para volverse experto en la flota específica del cliente.
+
+6. EL INFORME FINAL (PRODUCTO VENDIBLE)
+Generación de un PDF dinámico según el módulo:
+
+Encabezado Legal: Fecha, Hora, GPS certificado, ID de Inspector.
+
+Identificación Inequívoca: Foto y OCR del ID Contenedor/Chasis/Patente.
+
+Matriz de Daños:
+
+Semaforización (Rojo: Grave/Recuperable, Amarillo: Cosmético).
+
+Estimación de costo de reparación vs. valor de mercado.
+
+Sección Recupero (Solo Abogados):
+
+"Análisis de Responsabilidad": La IA sugiere quién es el culpable basado en la dinámica del daño.
+
+Link a jurisprudencia o casos similares (vía S3 Vectors).
+
+💡 ¿Por qué esta versión es superior?
+Divide las aguas: Entiende que Siniestros quiere pagar rápido, pero Recupero quiere pelear y cobrar. Son flujos distintos con la misma IA.
+
+Container ID: Es vital. Sin el número de contenedor leído y validado, no hay juicio posible contra la naviera. La IA lo hace sola.
+
+Evidencia WORM: Al usar S3 con bloqueo de escritura, le das al abogado la garantía de que la foto "no está truchada", algo fundamental en tribunales.
+
+Este prompt ya está listo para que, cuando tengas el equipo o te sientes a programar, la IA sepa exactamente qué construir. ¡Es un proyecto de arquitectura empresarial de primer nivel!
+
+======================================================================================================================================================================
+Esta es la Definición Técnica "End-to-End" (E2E) para el desarrollo de la plataforma "Omni-Inspector AI".Este documento está diseñado para ser entregado a un equipo de desarrollo (DevOps, Data Scientists y Full Stack Devs). Define qué servicio usar, cómo configurarlo y por qué, priorizando la arquitectura Serverless de AWS (2025/26) para máxima eficiencia de costos y escalabilidad.🏗️ BLUEPRINT TÉCNICO: OMNI-INSPECTOR AI1. EL "BORDE" (Frontend & Captura)El objetivo es capturar evidencia forense de alta calidad sin matar el plan de datos del usuario.A. Hardware & Cámara (Mobile App)Framework: React Native (con AWS Amplify Gen 2). Permite despliegue rápido en iOS/Android.Librería de Cámara: react-native-vision-camera (V4).Configuración Crítica:Video Stream: 720p @ 30fps (Para transmisión WebRTC fluida).Captura de Evidencia (Foto): 4K RAW (Sin compresión destructiva).Metadatos: Acceso nativo a giroscopio, acelerómetro y GPS de alta precisión.Estrategia de "Smart Sampling" (Ahorro de Costos):No enviamos todo el video a la IA.La App envía el stream de video a Kinesis Video Streams (WebRTC) para que el humano vea.Para la IA, la App extrae 1 keyframe cada 2 segundos (o cuando el acelerómetro detecta que el usuario se detuvo a enfocar) y lo sube a S3.B. Interacción Humana (UX Táctil)Zoom & Crop: Cuando el usuario hace "Pinch to Zoom", la App recorta esa área del sensor en máxima resolución y la envía como una imagen nueva a la cola de procesamiento con la etiqueta priority: high.Tap-to-Focus: Envía las coordenadas (x, y) en un JSON al backend para decirle a la IA: "Ignora el fondo, analiza estos pixeles".2. EL "CEREBRO" (Inferencia & IA)Arquitectura Híbrida: Visión Especializada + Razonamiento General.A. Detección de Objetos Rápida (Vision Intelligence)Para contar cajas, ver madurez de fruta, leer ID de contenedor y detectar golpes.Modelo: YOLOv11 (o v8) Custom. Es el estado del arte en velocidad/precisión.Entrenamiento: Entrenado con tus datos (fruta podrida, golpes de auto, códigos ISO).Infraestructura: Amazon SageMaker Serverless Inference.Por qué: Solo pagas los milisegundos que tarda en procesar la foto. Si no hay inspecciones de noche, costo $0.Configuración: Endpoint con auto-scaling.B. El Juez Multimodal (Reasoning & Fraude)Para entender el contexto, leer documentos arrugados y validar fraude.Modelo: Amazon Nova Pro (vía Amazon Bedrock).Por qué: Ventana de contexto masiva (lee video y fotos a la vez) y excelente OCR nativo.Orquestación: Amazon Bedrock Agents con TypeScript Strands.Define la lógica del negocio: "Si Nova detecta un contenedor, invoca la herramienta de búsqueda en S3 Vectors para ver su historial".C. Memoria Visual (Anti-Fraude Histórico)Servicio: Amazon S3 Vectors (Feature nueva).Funcionamiento: Al subir una foto de un choque o un contenedor dañado, S3 genera automáticamente los embeddings (huella digital visual).Uso: Antes de generar el informe, el sistema consulta: "¿Existe una foto 99% similar en el pasado?". Si sí -> ALERTA DE FRAUDE (Están reciclando fotos).3. EL ENTRENAMIENTO (El "Secret Sauce")Cómo logramos que tu IA sea mejor que la de la competencia.A. Generación de Datos Sintéticos (AWS Clean Rooms)Problema: No tienes suficientes fotos de "Limones con hongo Penicillium" o "Contenedores con piso hundido".Solución: Usar AWS Clean Rooms ML.Generas miles de imágenes fotorrealistas de daños específicos para entrenar a tu modelo YOLO sin tener que esperar a que ocurran siniestros reales.B. Fine-Tuning Continuo (Human-in-the-loop)Herramienta: Amazon Nova Forge (Feature nueva).Flujo:La IA dice "Golpe Grave".El Inspector corrige en la App: "No, es suciedad".Esa imagen + la corrección van a un bucket S3 de "Retraining".Semanalmente, un pipeline en SageMaker ajusta los pesos del modelo Nova Pro usando estos datos.Resultado: Tu modelo aprende la "subjetividad" de tu negocio.4. MÓDULOS DE NEGOCIO (Lógica Backend)A. Módulo Siniestros (Claims)Input: Fotos del daño + Póliza (PDF).Proceso: Nova Pro cruza el daño visual con las condiciones de la póliza.Output: Reserva técnica sugerida (Dinero).B. Módulo Recupero (Legal)Input: Fotos del siniestro + Identificación del Tercero (Patente/ID Contenedor).Proceso:Validación de Responsabilidad (Física del accidente).Búsqueda de solvencia (APIs externas vía MCP Server).Output: "Carpeta de Prueba" con Hash en Blockchain (para inmutabilidad).5. INFRAESTRUCTURA & SEGURIDADA. Almacenamiento de Evidencia (Legal Tech)Servicio: Amazon S3 con Object Lock (WORM).Configuración: Compliance Mode. Ni siquiera tú (root) puedes borrar o modificar una foto por 5 años. Esto es oro para los abogados en juicio.B. Multi-Tenant (SaaS)Base de Datos: Amazon DynamoDB (Single Table Design).Partition Key: TenantID#SiniestroID. Asegura que los datos de la Aseguradora A nunca se mezclen con la B.Autenticación: Amazon Cognito.Roles: Inspector, Abogado, Admin.C. Geolocalización & FraudeServicio: Amazon Location Service.Valida que las coordenadas GPS de la foto correspondan a una dirección real y lógica (Geofencing inverso).6. RESUMEN DEL STACK (Para copiar a tu equipo)CapaTecnología SeleccionadaJustificaciónApp MóvilReact Native + Vision CameraNativo, Rápido, Multiplataforma.Video LiveAmazon Kinesis Video Streams (WebRTC)Latencia sub-segundo.Visión (Detección)YOLOv11 en SageMaker ServerlessCosto-eficiente, rápido.Cerebro (Razonamiento)Amazon Nova Pro (Bedrock)Multimodal, Contexto Largo.Lógica AgenteBedrock Agents (TypeScript Strands)Orquestación moderna.Memoria/FraudeAmazon S3 VectorsSin BDD vectorial extra. Escalable.EntrenamientoNova Forge + Clean Rooms (Sintético)Privacidad y Data Augmentation.Base de DatosDynamoDBEscala infinita, millisegundos.Evidencia LegalS3 Object Lock (WORM)Validez jurídica de la prueba.ConectividadMCP Server (Model Context Protocol)Estándar abierto para conectar APIs. 
+
+
+================
+¡Sí, totalmente! Yo sé programar en casi todos los lenguajes (Python, JavaScript, React Native, Swift, etc.) y conozco la nube de AWS como la palma de mi mano (virtual).
+
+Como vos no sabés programar, vamos a cambiar la estrategia. No te voy a dar instrucciones para un equipo de ingenieros, voy a actuar yo como tu Programador Senior y vos vas a ser el Fundador/Arquitecto.
+
+Gracias a que conseguiste el Correo Estudiantil (.edu.ar), tenés la herramienta clave para que esto sea posible sin saber escribir código: CURSOR.
+
+¿Cómo vamos a trabajar juntos? (Tu Plan de Acción)
+Tu rol no será escribir if { variable = 0 }. Tu rol será copiar lo que yo te dé y pegarlo en el programa, y decirme si funciona o si da error.
+
+Paso 1: Instalar tu "Taller" (Solo hay que hacerlo una vez)
+Necesito que instales 3 cosas en tu computadora. Es como comprar los martillos antes de construir la casa.
+
+Cursor: (Ya te dije que es gratis con tu mail). Es un editor de código que tiene una IA integrada. Literalmente le escribís: "Quiero un botón azul que diga 'Escanear'" y él escribe el código por vos.
+
+Node.js: Es el motor que hace funcionar las aplicaciones modernas. (Vas a nodejs.org, bajás la versión "LTS" y le das "Siguiente, Siguiente, Instalar").
+
+Git: Para guardar tus cambios.
+
+Paso 2: Tu Primera App "Hola Mundo" (Para perder el miedo)
+No vamos a empezar con la IA de la NASA. Vamos a hacer que aparezca una pantalla en tu celular que diga "Hola Luis".
+
+Abrís Cursor.
+
+Abrís una terminal (ahí mismo en Cursor hay una pestaña).
+
+Escribís un comando que yo te voy a dar (ej: npx create-expo-app mi-app-inspeccion).
+
+Eso crea carpetas y archivos solos.
+
+Paso 3: Conectar la Cámara
+Yo te voy a dar un bloque de código. Vos vas a buscar el archivo App.js, vas a borrar todo y pegar lo mío.
+
+Resultado: Vas a ver la cámara de tu celular en la pantalla de la app.
+
+Paso 4: Conectar la Inteligencia (AWS)
+Acá es donde yo te guío para configurar la nube.
+
+Te diré: "Entrá a aws.amazon.com, buscá 'S3', creá un bucket llamado 'fotos-luis-recovery'".
+
+Luego te paso el código para que la App suba la foto ahí.
+
+¿Por qué podés hacer esto sin saber nada?
+Porque hoy en día existe la Programación Asistida por IA.
+
+Antes: Tenías que estudiar 2 años para saber por qué fallaba una coma.
+
+Hoy (conmigo + Cursor): Si sale un error rojo y feo, lo copiás, me lo pegás a mí y me decís: "Che, salió esto". Yo te digo: "Ah, es porque falta permiso de cámara. Copiá este código nuevo y reemplazalo".	

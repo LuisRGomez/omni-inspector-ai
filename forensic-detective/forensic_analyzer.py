@@ -93,12 +93,15 @@ class ForensicAnalyzer:
     Validates image authenticity using multiple techniques
     """
     
-    def __init__(self, ela_threshold: float = 0.15):
+    def __init__(self, ela_threshold: float = 0.20):
         """
         Initialize forensic analyzer
         
         Args:
             ela_threshold: Threshold for ELA tampering detection (0.0-1.0)
+                          Default 0.20 accounts for modern smartphone processing (HDR, scene optimization)
+                          Lower values (0.10-0.15) for stricter validation
+                          Higher values (0.25-0.30) for more lenient validation
         """
         self.ela_threshold = ela_threshold
     
@@ -308,14 +311,18 @@ class ForensicAnalyzer:
         ela_score = float(np.mean(diff))
         
         # Find suspicious regions (areas with high difference)
-        threshold = self.ela_threshold
-        suspicious_mask = np.mean(diff, axis=2) > threshold
+        # Use a higher threshold for region detection (2x the ELA threshold)
+        region_threshold = self.ela_threshold * 2
+        suspicious_mask = np.mean(diff, axis=2) > region_threshold
         
         # Find bounding boxes of suspicious regions
         suspicious_regions = self._find_suspicious_regions(suspicious_mask)
         
         # Determine if image is tampered
-        is_tampered = ela_score > self.ela_threshold or len(suspicious_regions) > 0
+        # Only flag as tampered if BOTH conditions are met:
+        # 1. ELA score is high
+        # 2. There are suspicious regions
+        is_tampered = ela_score > self.ela_threshold and len(suspicious_regions) > 0
         confidence = min(ela_score / self.ela_threshold, 1.0) if is_tampered else 1.0 - ela_score
         
         return TamperingAnalysis(

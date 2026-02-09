@@ -42,3 +42,9 @@ env/
 *.tmp
 *.temp
 .cache/
+
+# Test photos and evidence
+talos-inspection-photos/
+forensic-detective/test_*.jpg
+forensic-detective/test_*.json
+forensic-detective/batch_analysis_report.json

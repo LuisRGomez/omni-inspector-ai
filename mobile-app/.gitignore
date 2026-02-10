@@ -1,0 +1,35 @@
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Build
+*.apk
+*.aab
+*.ipa
+
+# Env
+.env
+.env.local
+
+# Dataset (NO incluir en builds)
+../Fruit-freshness-detection-dataset/

@@ -1,0 +1,13 @@
+# Dataset convertido a YOLO
+path: /opt/ml/input/data/training
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: fresh
+  1: overripe
+  2: spoiled
+  3: mold
+  4: bruise
+  5: dirt

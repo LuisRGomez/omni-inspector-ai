@@ -63,12 +63,19 @@
       "Resource": "arn:aws:lambda:*:*:function:omni-inspector-*"
     },
     {
-      "Sid": "IAMPassRole",
+      "Sid": "IAMRoleManagement",
       "Effect": "Allow",
       "Action": [
-        "iam:PassRole"
+        "iam:GetRole",
+        "iam:CreateRole",
+        "iam:AttachRolePolicy",
+        "iam:PassRole",
+        "iam:ListAttachedRolePolicies"
       ],
-      "Resource": "arn:aws:iam::*:role/omni-inspector-*"
+      "Resource": [
+        "arn:aws:iam::*:role/omni-inspector-*",
+        "arn:aws:iam::*:role/OmniInspector*"
+      ]
     },
     {
       "Sid": "CloudWatchLogs",

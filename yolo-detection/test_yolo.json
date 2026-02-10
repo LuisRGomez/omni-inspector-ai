@@ -1,0 +1,15 @@
+{
+  "image_url": "file://..\\talos-inspection-photos\\20260207_091519.jpg",
+  "timestamp": "2026-02-09T11:48:49.923065",
+  "detections": [],
+  "image_dimensions": [
+    4000,
+    3000
+  ],
+  "inference_time_ms": 4777.336,
+  "summary": {
+    "total_detections": 0,
+    "critical_issues": 0,
+    "overall_severity": "none"
+  }
+}

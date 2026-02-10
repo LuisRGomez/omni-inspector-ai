@@ -25,7 +25,7 @@ def analyze_command(args):
     # Save report if requested
     if args.output:
         with open(args.output, 'w') as f:
-            json.dumps(result.to_dict(), f, indent=2)
+            json.dump(result.to_dict(), f, indent=2)
         print(f"\n📄 Report saved to: {args.output}")
     
     # Exit with appropriate code

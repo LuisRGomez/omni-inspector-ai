@@ -1,0 +1,23 @@
+# Node modules (NUNCA incluir)
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+
+# Archivos innecesarios
+*.md
+*.log
+*.bat
+*.ps1
+*.sh
+.git/
+.vscode/
+.idea/
+__pycache__/
+
+# Archivos de build
+*.apk
+*.aab
+*.ipa

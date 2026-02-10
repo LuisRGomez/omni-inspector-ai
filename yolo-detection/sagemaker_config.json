@@ -1,0 +1,7 @@
+{
+  "account_id": "472661249377",
+  "region": "us-east-1",
+  "role_arn": "arn:aws:iam::472661249377:role/OmniInspectorSageMakerRole",
+  "model_bucket": "omni-inspector-models-472661249377",
+  "endpoint_name": "omni-inspector-yolo"
+}

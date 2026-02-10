@@ -1,0 +1,9 @@
+
+{
+  "name": "Talos Forensics Pro",
+  "description": "Unidad de peritaje táctico omni-inspector para alimentos, vehículos y logística.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

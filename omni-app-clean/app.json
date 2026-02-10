@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Omni Inspector",
+    "slug": "omni-inspector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "omniinspector",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "com.omniinspector.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1a2e"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir acceso a la cámara para capturar evidencia"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permitir acceso a la galería para guardar fotos",
+          "savePhotosPermission": "Permitir guardar fotos de inspección"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2b8a1c99-925a-4245-86c4-10268d03b1ce"
+      }
+    }
+  }
+}

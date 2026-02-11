@@ -45,6 +45,20 @@ Este proyecto sigue una estructura organizada por temas. Cada funcionalidad o mo
    - El agente debe poder: crear recursos, configurar servicios, hacer deploys, gestionar infraestructura
    - Objetivo: cero intervencion manual, todo automatizable
 
+7. **Repositorios Git Separados - REGLA CRITICA**
+   - Si creamos un repo git para un tema especifico, MANTENERLO SEPARADO
+   - NO mezclar repos independientes con el proyecto principal
+   - Cada herramienta standalone debe tener su propio repo
+   - Ejemplos de repos separados:
+     - `jira-mcp-fix` → Repo independiente para extensiones MCP Jira
+     - `ssh-mcp-tools` → Repo independiente para herramientas SSH
+   - Beneficios:
+     - Facil de compartir con otros usuarios
+     - Versionado independiente
+     - Instalacion standalone sin dependencias del proyecto principal
+     - Mantenimiento separado
+   - RECORDAR: Si ya existe un repo git separado, NO agregarlo como subdirectorio del proyecto principal
+
 ### Estructura Actual
 
 ```

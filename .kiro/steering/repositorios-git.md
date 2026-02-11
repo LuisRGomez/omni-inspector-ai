@@ -21,15 +21,16 @@ Este archivo mantiene un registro de todos los repositorios git asociados al pro
 
 ## Repositorios Independientes
 
-### jira-mcp-fix
-- **URL**: [PENDIENTE - Crear repo separado]
+### jira-mcp-extended
+- **URL**: https://github.com/LuisRGomez/jira-mcp-extended
 - **Descripción**: Extensiones para mcp-server-jira con 4 funciones adicionales (assign, comment, attachment, link)
-- **Ubicación Local**: `C:\Users\TitoGomez\Desktop\talos forencing\jira-mcp-fix` (TEMPORAL - debe moverse)
-- **Estado**: ❌ ACTUALMENTE MEZCLADO CON REPO PRINCIPAL (ERROR)
-- **Acción Requerida**: 
-  1. Crear repo independiente en GitHub
-  2. Remover del repo principal
-  3. Mantener como proyecto standalone
+- **Estado**: ✅ REPO INDEPENDIENTE CREADO Y PUSHEADO
+- **Instalación**: 
+  ```bash
+  git clone https://github.com/LuisRGomez/jira-mcp-extended.git
+  cd jira-mcp-extended
+  python patch_v5_final.py
+  ```
 - **Razón de Separación**: 
   - Herramienta standalone reutilizable
   - No depende del proyecto OmniInspector
@@ -52,9 +53,11 @@ Este archivo mantiene un registro de todos los repositorios git asociados al pro
 ## Historial de Cambios
 
 ### 2026-02-11
-- ❌ ERROR: Agregado jira-mcp-fix al repo principal (commit 23c2e1c)
-- 📝 Creado este archivo de registro
-- ⚠️ PENDIENTE: Separar jira-mcp-fix a su propio repo
+- ✅ CORREGIDO: Revertido commit que mezclaba jira-mcp-fix con repo principal
+- ✅ CREADO: Repo independiente jira-mcp-extended en GitHub
+- ✅ PUSHEADO: Código limpio sin credenciales hardcodeadas
+- ✅ LIMPIADO: Removidas carpetas jira-mcp-fix y jira-mcp-extended del repo principal
+- 📝 Actualizado registro de repos con URL correcta
 
 ## Próximos Repos Potenciales
 
